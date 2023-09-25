@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/EmptyTestNGTest.java to edit this template
  */
-package de.marx_software.lucene.search;
+package com.github.thmarx.lucene.utils.search;
 
+import com.github.thmarx.lucene.utils.search.MultiSearcherManager;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;

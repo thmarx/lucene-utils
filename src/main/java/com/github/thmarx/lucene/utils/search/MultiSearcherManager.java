@@ -14,11 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.marx_software.lucene.search;
+package com.github.thmarx.lucene.utils.search;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.stream.Stream;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
