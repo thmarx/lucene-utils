@@ -58,3 +58,7 @@ try {
 
 shardedIndex.close();
 ```
+
+# Usage
+
+The artifacts are deployed to [github packages](https://github.com/thmarx/lucene-utils/packages/1953386).
