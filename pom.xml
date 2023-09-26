@@ -12,6 +12,25 @@
 		<exec.mainClass>de.marx_software.product.search.lucene.utils.LuceneUtils</exec.mainClass>
 	</properties>
 	
+	<inceptionYear>2023</inceptionYear>
+	<organization>
+		<name>Marx-Software</name>
+		<url>https://marx-software.de</url>
+	</organization>
+	<developers>
+		<developer>
+			<name>Thorsten Marx</name>
+			<email>thorsten@marx-software.de</email>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>APACHE LICENSE, VERSION 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
@@ -43,4 +62,34 @@
 		</dependency>
 
 	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>2.2.0</version>
+				<configuration>
+					<verbose>false</verbose>
+					<licenseName>apache_v2</licenseName>
+				</configuration>
+				<executions>
+					<execution>
+						<id>first</id>
+						<goals>
+							<goal>update-file-header</goal>
+						</goals>
+						<phase>process-sources</phase>
+						<configuration>
+							<licenseName>apache_v2</licenseName>
+							<roots>
+								<root>src/main/java</root>
+								<root>src/test</root>
+							</roots>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
