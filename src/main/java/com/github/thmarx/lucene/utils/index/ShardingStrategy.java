@@ -21,7 +21,6 @@ package com.github.thmarx.lucene.utils.index;
  */
 
 import java.util.List;
-import org.apache.lucene.document.Document;
 
 /**
  *
